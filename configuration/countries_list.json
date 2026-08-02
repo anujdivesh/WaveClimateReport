@@ -1,0 +1,365 @@
+[
+    {
+        "country_name": "American Samoa",
+        "country_code": "AS",
+        "locations": [
+            "Pago Pago",
+            "Tau Island"
+        ],
+        "bbox_xmin": 189.0,
+        "bbox_xmax": 191.0,
+        "bbox_ymin": -14.6,
+        "bbox_ymax": -14.0,
+        "map_length": 5,
+        "tickspacing": 0.5
+    },
+    {
+        "country_name": "Cook Islands",
+        "country_code": "CK",
+        "locations": [
+            "Arutanga",
+            "Avatiu",
+            "Penrhyn",
+            "Rarotonga Wave Buoy 1",
+            "Rarotonga Wave Buoy 2"
+        ],
+        "bbox_xmin": 196.0,
+        "bbox_xmax": 207.0,
+        "bbox_ymin": -23.2,
+        "bbox_ymax": -15.0,
+        "map_length": 4,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Fiji",
+        "country_code": "FJ",
+        "locations": [
+            "Fiji Wave Buoy",
+            "Lakepa Island",
+            "Rotuma Island",
+            "Vanua Balavu Island",
+            "Ono-i-Lau",
+            "Gau Island",
+            "Beqa Island",
+            "Kadavu",
+            "Labasa Channel",
+            "Lautoka",
+            "Levuka",
+            "Malau",
+            "Savusavu",
+            "Suva",
+            "Taveuni"
+        ],
+        "bbox_xmin": 176.5,
+        "bbox_xmax": 182.2,
+        "bbox_ymin": -20.2,
+        "bbox_ymax": -15.5,
+        "map_length": 4,
+        "tickspacing": 1
+    },
+    {
+        "country_name": "French Polynesia",
+        "country_code": "PF",
+        "locations": [
+            "Bora Bora",
+            "Fakarava",
+            "Hiva Oa",
+            "Nuku Hiva",
+            "Papeete",
+            "Raivavae ",
+            "Rangiroa",
+            "Rikitea",
+            "Rimatara",
+            "Rurutu",
+            "Tubuai"
+        ],
+        "bbox_xmin": 205.0,
+        "bbox_xmax": 227.5,
+        "bbox_ymin": -28.3,
+        "bbox_ymax": -7.0,
+        "map_length": 3.5,
+        "tickspacing": 4
+    },
+    {
+        "country_name": "Federated States of Micronesia",
+        "country_code": "FM",
+        "locations": [
+            "Chuuk",
+            "Ebeye",
+            "Kapingamarangi",
+            "Kosrae",
+            "Pohnpei",
+            "Yap"
+        ],
+        "bbox_xmin": 142.2,
+        "bbox_xmax": 165.5,
+        "bbox_ymin": 4.0,
+        "bbox_ymax": 12.5,
+        "map_length": 5,
+        "tickspacing": 4
+    },
+    {
+        "country_name": "Guam",
+        "country_code": "GM",
+        "locations": [
+            "Guam"
+        ],
+        "bbox_xmin": 144.4,
+        "bbox_xmax": 145.1,
+        "bbox_ymin": 13.1,
+        "bbox_ymax": 13.7,
+        "map_length": 4,
+        "tickspacing": 0.25
+    },
+    {
+        "country_name": "Kiribati",
+        "country_code": "KB",
+        "locations": [
+            "Betio",
+            "Bonriki",
+            "Canton Island",
+            "Fanning Island",
+            "Kiritimati",
+            "Kiritimati South"
+        ],
+        "bbox_xmin": 171.3,
+        "bbox_xmax": 178.3,
+        "bbox_ymin": -3.0,
+        "bbox_ymax": 4.0,
+        "map_length": 3.5,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Marshall Islands",
+        "country_code": "MA",
+        "locations": [
+            "Kwajalein",
+            "Majuro"
+        ],
+        "bbox_xmin": 164.9,
+        "bbox_xmax": 175.3,
+        "bbox_ymin": 4.5,
+        "bbox_ymax": 14.5,
+        "map_length": 4,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Nauru",
+        "country_code": "NA",
+        "locations": [
+            "Nauru"
+        ],
+        "bbox_xmin": 166.8,
+        "bbox_xmax": 167.0,
+        "bbox_ymin": -0.6,
+        "bbox_ymax": -0.4,
+        "map_length": 4,
+        "tickspacing": 0.1
+    },
+    {
+        "country_name": "New Caledonia",
+        "country_code": "NC",
+        "locations": [
+            "Kouaoua",
+            "Mare Island",
+            "Nepoui",
+            "Noumea",
+            "Pine Island",
+            "Poindimie",
+            "Poum",
+            "Thio"
+        ],
+        "bbox_xmin": 162.9,
+        "bbox_xmax": 169.1,
+        "bbox_ymin": -23.2,
+        "bbox_ymax": -18.8,
+        "map_length": 4,
+        "tickspacing": 1
+    },
+    {
+        "country_name": "Palau",
+        "country_code": "PL",
+        "locations": [
+            "Koror"
+        ],
+        "bbox_xmin": 133.6,
+        "bbox_xmax": 135.1,
+        "bbox_ymin": 6.7,
+        "bbox_ymax": 8.0,
+        "map_length": 4,
+        "tickspacing": 0.5
+    },
+    {
+        "country_name": "Papua New Guinea",
+        "country_code": "PG",
+        "locations": [
+            "Alotau",
+            "Arawa",
+            "Bialla",
+            "Daru",
+            "Deception Bay",
+            "IHU Bay",
+            "Kavieng",
+            "Kimbe",
+            "Lae",
+            "Lorengau",
+            "Madang",
+            "Port Moresby",
+            "Rabaul",
+            "Samarai",
+            "Vanimo",
+            "Wewak"
+        ],
+        "bbox_xmin": 140.5,
+        "bbox_xmax": 156.4,
+        "bbox_ymin": -12.7,
+        "bbox_ymax": -1.0,
+        "map_length": 4,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Western Samoa",
+        "country_code": "WS",
+        "locations": [
+            "Apia",
+            "Samoa Directional Wave Buoy",
+            "Samoa Wave Buoy 1",
+            "Samoa Wave Buoy 2"
+        ],
+        "bbox_xmin": 187.1,
+        "bbox_xmax": 188.7,
+        "bbox_ymin": -14.2,
+        "bbox_ymax": -13.3,
+        "map_length": 5,
+        "tickspacing": 0.5
+    },
+    {
+        "country_name": "Solomon Islands",
+        "country_code": "SO",
+        "locations": [
+            "Ghizo",
+            "Honiara",
+            "Isabel Island"
+        ],
+        "bbox_xmin": 158.2,
+        "bbox_xmax": 167.7,
+        "bbox_ymin": -12.8,
+        "bbox_ymax": -6.4,
+        "map_length": 5,
+        "tickspacing": 1
+    },
+    {
+        "country_name": "Tonga",
+        "country_code": "TO",
+        "locations": [
+            "Eua Wave Buoy",
+            "Lifuka",
+            "Neiafu",
+            "Niuas",
+            "Nuku'alofa",
+            "Pangai",
+            "Tonga Wave Buoy",
+            "Tonga Wave Buoy 1"
+        ],
+        "bbox_xmin": 183,
+        "bbox_xmax": 189.1,
+        "bbox_ymin": -21.7,
+        "bbox_ymax": -15.3,
+        "map_length": 3.5,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Tuvalu",
+        "country_code": "TV",
+        "locations": [
+            "Fongafale",
+            "Funafuti",
+            "Funafuti Wave buoy",
+            "Nanumaga",
+            "Nanumea",
+            "Niulakita",
+            "Niutao",
+            "Nui",
+            "Nukufetau",
+            "Nukulaelae",
+            "Vaitupu"
+        ],
+        "bbox_xmin": 174.9,
+        "bbox_xmax": 181.7,
+        "bbox_ymin": -10.6,
+        "bbox_ymax": -4.5,
+        "map_length": 4,
+        "tickspacing": 1
+    },
+    {
+        "country_name": "Vanuatu",
+        "country_code": "VU",
+        "locations": [
+            "Aneityum",
+            "Efate Wave Buoy",
+            "Luganville",
+            "Pentecost",
+            "Port Vila",
+            "Tanna"
+        ],
+        "bbox_xmin": 164.2,
+        "bbox_xmax": 171.1,
+        "bbox_ymin": -21.0,
+        "bbox_ymax": -12.2,
+        "map_length": 3.5,
+        "tickspacing": 2
+    },
+    {
+        "country_name": "Wallis and Futuna",
+        "country_code": "WF",
+        "locations": [
+            "Honikulu Passage",
+            "Leava"
+        ],
+        "bbox_xmin": 181.7,
+        "bbox_xmax": 184.0,
+        "bbox_ymin": -14.5,
+        "bbox_ymax": -13.1,
+        "map_length": 5,
+        "tickspacing": 0.5
+    },
+    {
+        "country_name": "Niue",
+        "country_code": "NI",
+        "locations": [
+            "Niue"
+        ],
+        "bbox_xmin": 190.0,
+        "bbox_xmax": 190.3,
+        "bbox_ymin": -19.2,
+        "bbox_ymax": -18.9,
+        "map_length": 3.5,
+        "tickspacing": 0.1
+    },
+    {
+        "country_name": "Tokelau",
+        "country_code": "TK",
+        "locations": [
+            "Nukunonu"
+        ],
+        "bbox_xmin": 187.0,
+        "bbox_xmax": 189.2,
+        "bbox_ymin": -10.1,
+        "bbox_ymax": -8.0,
+        "map_length": 4,
+        "tickspacing": 1
+    },
+    {
+        "country_name": "Northern Mariana Islands",
+        "country_code": "NM",
+        "locations": [
+            "Saipan"
+        ],
+        "bbox_xmin": 143.3,
+        "bbox_xmax": 147,
+        "bbox_ymin": 12.5,
+        "bbox_ymax": 16,
+        "map_length": 4,
+        "tickspacing": 1
+    }
+]

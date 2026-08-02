@@ -1,0 +1,65 @@
+[
+    {
+        "name": "validationWaveHindcast",
+        "id": "Table 1",
+        "caption": "Validation of the wave hindcast model used to evaluate the wave climate.",
+	"headers": true,
+	"row_format": null,
+	"content" : 
+		[
+			["Island (Country)", "Longitude (\u00B0E)", "Latitude (\u00B0N)", "Depth [m]", "RMS [m]", "Skill", "Bias [m]"],
+		     	["Efate (Vanuatu)", 168.5500, -17.8750, 285, 0.419, 0.905, 0.309],
+			["Funafuti (Tuvalu)", 179.2150, -8.525, 585, 0.559, 0.544, 0.504],
+			["Kadavu (Fiji)", 177.9567, -19.3067, 356, 0.355, 0.910, -0.097],
+			["Rarotonga (Cook Islands)", 200.2717, -21.2700, 300, 0.413, 0.895, 0.087],
+			["Tongatapu (Tonga)", 184.7300, -21.2390, 309, 0.321, 0.920, -0.039],
+			["Apolima St. (Samoa)", 187.8000, -13.8800, 104, 0.394, 0.871, 0.241],
+			["Upolu (Samoa)", 188.7800, -14.4150, 850, 0.347, 0.883, 0.146]
+		]
+    },
+    {
+        "name": "waveConditionsHindcast",
+        "id": "Table 2",
+        "caption": "Mean wave conditions calculated between {yearStart} and {yearEnd} for {locName}.",
+	"headers": false,
+	"row_format" : null,
+	"content" : 
+		[
+			["Mean Wave Height", "{avgWave_meanHs:.2f} meters"],
+		     	["Mean Wave Period", "{avgWave_meanTp:.2f} seconds"],
+			["Mean Wave Direction [\u00B0 True North]", "{avgWave_meanDp:.0f}\u00B0"],
+			["Mean Number of Wave Components", "{avgWave_nComponents:.0f}"],
+			["Mean Annual Variability", "{avgWave_meanAnnualVar:.02f} meters, ({avgWave_meanAnnualVarPerC:.01f}%)"],
+			["Mean Seasonal Variability", "{avgWave_meanSeasonalVar:.02f} meters, ({avgWave_meanSeasonalVarPerC:.01f}%)"]
+		]
+    },
+    {
+        "name": "largestWaveEvents",
+        "id": "Table 3",
+        "caption": "List of the 30 largest wave events in {locName}.",
+	"headers": true,
+	"row_format" : ["{rank_ii:.0f}", "{datetime_ii}", "{waveHeight_ii:.02f}", "{period_ii:.02f}", "{direction_ii:.0f}"],
+	"content" : 
+		[
+		["Rank", "Date", "Height [m]", "Period [s]", "Direction (from) [\u00B0]"]
+		]
+    },
+    {
+        "name": "summaryExtremeWaves",
+        "id": "Table 4",
+        "caption": "Summary of the results from the extreme wave analysis in {locName}.",
+	"headers": false,
+	"row_format" : null,
+	"content" : 
+		[
+			["Large Wave Height (90th percentile)", "{extremeWave_thresholdLarge:.2f} meters"],
+		     	["Severe Wave Height (99th percentile)", "{extremeWave_thresholdSevere:.2f} meters"],
+			["1 year ARI Wave Height", "{extremeWave_waveHeight_ARI_1:.2f} meters"],
+			["10 year ARI Wave Height", "{extremeWave_waveHeight_ARI_10:.2f} meters"],
+			["20 year ARI Wave Height", "{extremeWave_waveHeight_ARI_20:.2f} meters"],
+			["50 year ARI Wave Height", "{extremeWave_waveHeight_ARI_50:.2f} meters"],
+			["100 year ARI Wave Height", "{extremeWave_waveHeight_ARI_100:.2f} meters"]
+		]
+
+    }
+]

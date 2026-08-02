@@ -1,0 +1,17 @@
+name: waveReportEnv_v2
+channels:
+  - defaults
+dependencies:
+  - python
+  - geopandas
+  - netcdf4
+  - scipy
+  - numpy
+  - windrose
+  - xarray
+  - matplotlib
+  - reportlab
+  - copulas
+  - cartopy
+  - pyextremes
+prefix: C:\Users\gregoires\AppData\Local\miniconda3\envs\waveReportEnv_v2

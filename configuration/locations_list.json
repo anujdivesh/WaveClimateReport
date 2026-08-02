@@ -1,0 +1,779 @@
+[
+    {
+        "country_code": "AS",
+        "location": "Pago Pago",
+        "longitude": "189.334",
+        "latitude": "-14.296",
+        "code": "P4"
+    },
+    {
+        "country_code": "AS",
+        "location": "Tau Island",
+        "longitude": "190.5802",
+        "latitude": "-14.2132",
+        "code": "P10"
+    },
+    {
+        "country_code": "CK",
+        "location": "Arutanga",
+        "longitude": "200.187",
+        "latitude": "-18.85",
+        "code": "P4"
+    },
+    {
+        "country_code": "CK",
+        "location": "Avatiu",
+        "longitude": "200.2158",
+        "latitude": "-21.202",
+        "code": "CK"
+    },
+    {
+        "country_code": "CK",
+        "location": "Penrhyn",
+        "longitude": "201.9263",
+        "latitude": "-8.9602",
+        "code": "P4"
+    },
+    {
+        "country_code": "CK",
+        "location": "Rarotonga Wave Buoy 1",
+        "longitude": "200.2717",
+        "latitude": "-21.27",
+        "code": "CK"
+    },
+    {
+        "country_code": "CK",
+        "location": "Rarotonga Wave Buoy 2",
+        "longitude": "200.2922",
+        "latitude": "-21.256",
+        "code": "CK"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Fiji Wave Buoy",
+        "longitude": "177.9567",
+        "latitude": "-19.3067",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Lakepa Island",
+        "longitude": "181.16348",
+        "latitude": "-18.257751",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Rotuma Island",
+        "longitude": "177.109523",
+        "latitude": "-12.477616",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Vanua Balavu Island",
+        "longitude": "180.94125",
+        "latitude": "-17.2616",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Ono-i-Lau",
+        "longitude": "181.33283",
+        "latitude": "-20.68011",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Gau Island",
+        "longitude": "179.264334",
+        "latitude": "-17.944046",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Beqa Island",
+        "longitude": "178.085034",
+        "latitude": "-18.388508",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Kadavu",
+        "longitude": "178.3207",
+        "latitude": "-19.2226",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Labasa Channel",
+        "longitude": "179.2686",
+        "latitude": "-16.29",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Lautoka",
+        "longitude": "177.4141",
+        "latitude": "-17.5944",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Levuka",
+        "longitude": "178.85",
+        "latitude": "-17.68",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Malau",
+        "longitude": "179.365",
+        "latitude": "-16.3578",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Savusavu",
+        "longitude": "179.3239",
+        "latitude": "-16.775",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Suva",
+        "longitude": "178.3953",
+        "latitude": "-18.1454",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FJ",
+        "location": "Taveuni",
+        "longitude": "179.8741",
+        "latitude": "-17.0593",
+        "code": "FJ"
+    },
+    {
+        "country_code": "FM",
+        "location": "Chuuk",
+        "longitude": "151.9796",
+        "latitude": "7.5138",
+        "code": "P4"
+    },
+    {
+        "country_code": "FM",
+        "location": "Ebeye",
+        "longitude": "167.7564",
+        "latitude": "8.7506",
+        "code": "P4"
+    },
+    {
+        "country_code": "FM",
+        "location": "Kapingamarangi",
+        "longitude": "154.7532",
+        "latitude": "1.1249",
+        "code": "GL"
+    },
+    {
+        "country_code": "FM",
+        "location": "Kosrae",
+        "longitude": "162.9313",
+        "latitude": "5.3693",
+        "code": "P4"
+    },
+    {
+        "country_code": "FM",
+        "location": "Pohnpei",
+        "longitude": "158.1838",
+        "latitude": "7.0272",
+        "code": "P4"
+    },
+    {
+        "country_code": "FM",
+        "location": "Yap",
+        "longitude": "138.1344",
+        "latitude": "9.4865",
+        "code": "P4"
+    },
+    {
+        "country_code": "GM",
+        "location": "Guam",
+        "longitude": "144.61",
+        "latitude": "13.45",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Betio",
+        "longitude": "172.9",
+        "latitude": "1.4135",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Bonriki",
+        "longitude": "173.2958",
+        "latitude": "1.4419",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Canton Island",
+        "longitude": "188.2371",
+        "latitude": "-2.827",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Fanning Island",
+        "longitude": "200.6065",
+        "latitude": "3.8422",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Kiritimati",
+        "longitude": "202.4379",
+        "latitude": "1.9636",
+        "code": "P4"
+    },
+    {
+        "country_code": "KB",
+        "location": "Kiritimati South",
+        "longitude": "202.125",
+        "latitude": "1.6",
+        "code": "P4"
+    },
+    {
+        "country_code": "MA",
+        "location": "Kwajalein",
+        "longitude": "167.5925",
+        "latitude": "8.815",
+        "code": "P4"
+    },
+    {
+        "country_code": "MA",
+        "location": "Majuro",
+        "longitude": "171.1864",
+        "latitude": "7.1786",
+        "code": "P4"
+    },
+    {
+        "country_code": "NA",
+        "location": "Nauru",
+        "longitude": "166.9044",
+        "latitude": "-0.5302",
+        "code": "P4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Kouaoua",
+        "longitude": "165.9237",
+        "latitude": "-21.2528",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Mare Island",
+        "longitude": "168.1287",
+        "latitude": "-21.5766",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Nepoui",
+        "longitude": "164.9222",
+        "latitude": "-21.4161",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Noumea",
+        "longitude": "166.2412",
+        "latitude": "-22.3741",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Pine Island",
+        "longitude": "167.4341",
+        "latitude": "-22.7141",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Poindimie",
+        "longitude": "165.485",
+        "latitude": "-20.8754",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Poum",
+        "longitude": "163.8295",
+        "latitude": "-20.2586",
+        "code": "A4"
+    },
+    {
+        "country_code": "NC",
+        "location": "Thio",
+        "longitude": "166.3138",
+        "latitude": "-21.5058",
+        "code": "A4"
+    },
+    {
+        "country_code": "NI",
+        "location": "Niue",
+        "longitude": "190.0268",
+        "latitude": "-19.0446",
+        "code": "P4"
+    },
+    {
+        "country_code": "NM",
+        "location": "Saipan",
+        "longitude": "145.674125",
+        "latitude": "15.215719",
+        "code": "P4"
+    },
+    {
+        "country_code": "PF",
+        "location": "Bora Bora",
+        "longitude": "208.22",
+        "latitude": "-16.4935",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Fakarava",
+        "longitude": "214.3854",
+        "latitude": "-16.6642",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Hiva Oa",
+        "longitude": "220.9733",
+        "latitude": "-9.8265",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Nuku Hiva",
+        "longitude": "219.8984",
+        "latitude": "-8.9544",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Papeete",
+        "longitude": "210.42",
+        "latitude": "-17.513",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Raivavae ",
+        "longitude": "212.3564",
+        "latitude": "-23.9077",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Rangiroa",
+        "longitude": "212.3628",
+        "latitude": "-14.8414",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Rikitea",
+        "longitude": "225.1375",
+        "latitude": "-23.3082",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Rimatara",
+        "longitude": "207.1956",
+        "latitude": "-22.6686",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Rurutu",
+        "longitude": "208.6432",
+        "latitude": "-22.4811",
+        "code": "GL"
+    },
+    {
+        "country_code": "PF",
+        "location": "Tubuai",
+        "longitude": "210.5202",
+        "latitude": "-23.3073",
+        "code": "GL"
+    },
+    {
+        "country_code": "PG",
+        "location": "Alotau",
+        "longitude": "150.4525",
+        "latitude": "-10.3182",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Arawa",
+        "longitude": "155.5947",
+        "latitude": "-6.111",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Bialla",
+        "longitude": "150.9832",
+        "latitude": "-5.295",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Daru",
+        "longitude": "143.2404",
+        "latitude": "-9.0595",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Deception Bay",
+        "longitude": "144.5813",
+        "latitude": "-7.8439",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "IHU Bay",
+        "longitude": "145.2716",
+        "latitude": "-7.9578",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Kavieng",
+        "longitude": "150.781",
+        "latitude": "-2.5602",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Kimbe",
+        "longitude": "150.1487",
+        "latitude": "-5.5405",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Lae",
+        "longitude": "147.01508",
+        "latitude": "-6.812883",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Lorengau",
+        "longitude": "147.3023",
+        "latitude": "-1.9494",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Madang",
+        "longitude": "145.869162",
+        "latitude": "-5.217708",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Port Moresby",
+        "longitude": "147.1188",
+        "latitude": "-9.5564",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Rabaul",
+        "longitude": "152.24",
+        "latitude": "-4.2867",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Samarai",
+        "longitude": "150.659",
+        "latitude": "-10.6118",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Vanimo",
+        "longitude": "141.2953",
+        "latitude": "-2.6505",
+        "code": "A4"
+    },
+    {
+        "country_code": "PG",
+        "location": "Wewak",
+        "longitude": "143.6621",
+        "latitude": "-3.5402",
+        "code": "A4"
+    },
+    {
+        "country_code": "PL",
+        "location": "Koror",
+        "longitude": "134.4933",
+        "latitude": "7.2596",
+        "code": "P4"
+    },
+    {
+        "country_code": "SO",
+        "location": "Ghizo",
+        "longitude": "156.8434",
+        "latitude": "-8.1353",
+        "code": "A4"
+    },
+    {
+        "country_code": "SO",
+        "location": "Honiara",
+        "longitude": "159.9826",
+        "latitude": "-9.4134",
+        "code": "A4"
+    },
+    {
+        "country_code": "SO",
+        "location": "Isabel Island",
+        "longitude": "159.6628",
+        "latitude": "-8",
+        "code": "A4"
+    },
+    {
+        "country_code": "TK",
+        "location": "Nukunonu",
+        "longitude": "188.1187",
+        "latitude": "-9.2351",
+        "code": "P4"
+    },
+    {
+        "country_code": "TO",
+        "location": "Eua Wave Buoy",
+        "longitude": "184.585",
+        "latitude": "-21.8383",
+        "code": "TO"
+    },
+    {
+        "country_code": "TO",
+        "location": "Lifuka",
+        "longitude": "185.7",
+        "latitude": "-19.8359",
+        "code": "P4"
+    },
+    {
+        "country_code": "TO",
+        "location": "Neiafu",
+        "longitude": "185.8932",
+        "latitude": "-18.7617",
+        "code": "P4"
+    },
+    {
+        "country_code": "TO",
+        "location": "Niuas",
+        "longitude": "184.3747",
+        "latitude": "-15.5555",
+        "code": "P10"
+    },
+    {
+        "country_code": "TO",
+        "location": "Nuku'alofa",
+        "longitude": "184.8155",
+        "latitude": "-21.0086",
+        "code": "TO"
+    },
+    {
+        "country_code": "TO",
+        "location": "Pangai",
+        "longitude": "185.5967",
+        "latitude": "-19.7779",
+        "code": "P4"
+    },
+    {
+        "country_code": "TO",
+        "location": "Tonga Wave Buoy",
+        "longitude": "184.73",
+        "latitude": "-21.237",
+        "code": "TO"
+    },
+    {
+        "country_code": "TO",
+        "location": "Tonga Wave Buoy 1",
+        "longitude": "184.785",
+        "latitude": "-21.221",
+        "code": "P10"
+    },
+    {
+        "country_code": "TV",
+        "location": "Fongafale",
+        "longitude": "179.1919",
+        "latitude": "-8.503",
+        "code": "FT"
+    },
+    {
+        "country_code": "TV",
+        "location": "Funafuti",
+        "longitude": "179.1919",
+        "latitude": "-8.503",
+        "code": "FT"
+    },
+    {
+        "country_code": "TV",
+        "location": "Funafuti Wave buoy",
+        "longitude": "179.215",
+        "latitude": "-8.525",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Nanumaga",
+        "longitude": "176.2745",
+        "latitude": "-6.2869",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Nanumea",
+        "longitude": "176.0406",
+        "latitude": "-5.6993",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Niulakita",
+        "longitude": "179.468349",
+        "latitude": "-10.791828",
+        "code": "P10"
+    },
+    {
+        "country_code": "TV",
+        "location": "Niutao",
+        "longitude": "177.3087",
+        "latitude": "-6.112",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Nui",
+        "longitude": "177.1021",
+        "latitude": "-7.2517",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Nukufetau",
+        "longitude": "178.2736",
+        "latitude": "-8.0334",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Nukulaelae",
+        "longitude": "179.7485",
+        "latitude": "-9.3793",
+        "code": "P4"
+    },
+    {
+        "country_code": "TV",
+        "location": "Vaitupu",
+        "longitude": "178.6536",
+        "latitude": "-7.4935",
+        "code": "P4"
+    },
+    {
+        "country_code": "VU",
+        "location": "Aneityum",
+        "longitude": "169.75751",
+        "latitude": "-20.237257",
+        "code": "A4"
+    },
+    {
+        "country_code": "VU",
+        "location": "Efate Wave Buoy",
+        "longitude": "168.55",
+        "latitude": "-17.875",
+        "code": "PV"
+    },
+    {
+        "country_code": "VU",
+        "location": "Luganville",
+        "longitude": "167.3787",
+        "latitude": "-15.5753",
+        "code": "A4"
+    },
+    {
+        "country_code": "VU",
+        "location": "Pentecost",
+        "longitude": "168.307984",
+        "latitude": "-15.942032",
+        "code": "A4"
+    },
+    {
+        "country_code": "VU",
+        "location": "Port Vila",
+        "longitude": "168.2914",
+        "latitude": "-17.7415",
+        "code": "PV"
+    },
+    {
+        "country_code": "VU",
+        "location": "Tanna",
+        "longitude": "169.2471",
+        "latitude": "-19.5668",
+        "code": "A4"
+    },
+    {
+        "country_code": "WF",
+        "location": "Honikulu Passage",
+        "longitude": "183.7796",
+        "latitude": "-13.395",
+        "code": "P10"
+    },
+    {
+        "country_code": "WF",
+        "location": "Leava",
+        "longitude": "181.8334",
+        "latitude": "-14.2998",
+        "code": "P10"
+    },
+    {
+        "country_code": "WS",
+        "location": "Apia",
+        "longitude": "188.2347",
+        "latitude": "-13.8204",
+        "code": "WS"
+    },
+    {
+        "country_code": "WS",
+        "location": "Samoa Directional Wave Buoy",
+        "longitude": "188.78",
+        "latitude": "-14.415",
+        "code": "P4"
+    },
+    {
+        "country_code": "WS",
+        "location": "Samoa Wave Buoy 1",
+        "longitude": "187.8",
+        "latitude": "-13.88",
+        "code": "P4"
+    },
+    {
+        "country_code": "WS",
+        "location": "Samoa Wave Buoy 2",
+        "longitude": "187.75",
+        "latitude": "-14.0583",
+        "code": "P4"
+    }
+]

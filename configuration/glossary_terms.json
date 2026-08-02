@@ -1,0 +1,78 @@
+[
+    {
+        "term": "Autumn",
+        "definition": "Autumn is the transition season between summer and winter, best noticed by the colour change in leaves and the harvest; Months: March to May"
+    },
+    {
+        "term": "Climate Oscillation",
+        "definition": "A climate oscillation or climate cycle is any recurring cyclical oscillation within global or regional climate, and is a type of climate pattern"
+    },
+    {
+        "term": "El Ni\u00f1o",
+        "definition": "El Ni\u00f1o events are large climate disturbances which are rooted in the tropical Pacific Ocean and occur every 3 to 7 years. They have a strong impact on the continents around the tropical Pacific, and some climatic influence on half of the planet."
+    },
+    {
+        "term": "Hindcast (waves)",
+        "definition": "The prediction of wave characteristics using meteorological information as opposed to the measurements of these features"
+    },
+    {
+        "term": "Mean Number of Wave comnponents",
+        "definition": "Represents the mean number of wave events occurring at any given time. These values describe the complexity of the wave climate."
+    },
+    {
+        "term": "Mean Annual Variability",
+        "definition": "Is the standard deviation in annual mean wave height. In other word, it is the average changes in the mean wave height expected from one year to another."
+    },
+    {
+        "term": "Mean Seasonal Variability",
+        "definition": "Is the standard deviation in the wave height within a year.  In other word it is the average changes in wave height from one season to another"
+    },
+    {
+        "term": "Offshore Zone",
+        "definition": "Coastal waters to the seaward of the nearshore zone. Swell waves in the offshore zone are unbroken and their behaviour is not influenced by the presence of the seabed."
+    },
+    {
+        "term": "Spring",
+        "definition": "Spring is the transition season between winter and summer during which we see days getting longer, temperatures warming and plants blossoming in time for summer; Months: September to November"
+    },
+    {
+        "term": "Summer",
+        "definition": "Time of year when part of the Earth receives the most daylight: The months of December, January, and February in the Southern Hemisphere."
+    },
+    {
+        "term": "Swell Waves",
+        "definition": "Wind waves remote from the area of generation (fetch) having a uniform and orderly appearance characterised by regularly spaced wave crests."
+    },
+    {
+        "term": "Wave Climate",
+        "definition": "Wave climate is the average wave condition in a given region over a long period of time, usually 30 years.  It is the measure of the average pattern of variation in <i>variables</i> such as wave height, wave period, and wave direction. As an example, seasonal variability in significant wave height may be characterized by calculating the monthly mean significant wave heights from several years of measurements."
+    },
+    {
+        "term": "Wave Direction",
+        "definition": "The direction from which ocean waves approach a location (Following the nautical convention). Generally, the principal wave direction is represented by the direction of the principal wave component."
+    },
+    {
+        "term": "Wave Height",
+        "definition": "The vertical distance between a wave crest and the next trough."
+    },
+    {
+        "term": "Wave Period",
+        "definition": "The time taken for consecutive wave crests or wave troughs to pass a given point."
+    },
+    {
+        "term": "Wave Power",
+        "definition": "The rate at which wave energy is transmitted in the direction of wave propagation. Normally expressed in kilowatts per metre of wave crest length."
+    },
+    {
+        "term": "Wave Rose",
+        "definition": "The annual wave rose shows where waves usually come from and the size of waves associated with each direction. It is a powerful illustration of the distribution of wave height and direction."
+    },
+    {
+        "term": "Wind Wave",
+        "definition": "The waves initially formed by the action of wind blowing over the sea surface. Wind waves are characterised by a range of heights, periods and wave lengths. As they leave the area of generation (fetch), wind waves develop a more ordered and uniform appearance and are referred to as swell or swell waves."
+    },
+    {
+        "term": "Winter",
+        "definition": "Time of year when part of the Earth receives the least daylight; Months: June to August"
+    }
+]

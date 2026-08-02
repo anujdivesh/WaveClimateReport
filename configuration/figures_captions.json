@@ -1,0 +1,62 @@
+[
+    {
+        "name": "locationMap",
+        "id": "Figure 1",
+        "caption": "Location maps of the site. The map on the left shows the region. The map on the right shows the island and its surroundings. The red point shows the actual site and green points (if present) indicate other available wave climate reports in the region."
+    },
+    {
+        "name": "annualWaveRose",
+        "id": "Figure 2",
+        "caption": "Annual wave rose for {locName}. Note that directions are where the waves are <b>coming from</b>."
+    },
+    {
+        "name": "seasonalWaveRose",
+        "id": "Figure 3",
+        "caption": "Seasonal wave rose for {locName}."
+    },
+    {
+        "name": "monthlyWaveVariation",
+        "id": "Figure 4",
+        "caption": "Monthly wave height (black line), wave period (red  line), and wave direction (arrows). The gray area represents the range of wave height between calm periods 10% of lowest wave height and large wave event (10%  of highest wave height)."
+    },
+    {
+        "name": "annualWaveVariation",
+        "id": "Figure 5",
+        "caption": "Annual wave height (black line), wave period (red  line), and wave direction (arrows). The gray area represents the range of wave height between calm periods 10% of lowest wave height and large wave event (10%  of highest wave height)."
+    },
+    {
+        "name": "largeWaveRose",
+        "id": "Figure 6",
+        "caption": "Large, severe and extreme wave rose for {locName}."
+    },
+    {
+        "name": "monthlyWaveVariation_large",
+        "id": "Figure 7",
+        "caption": "Monthly variation in large waves (90th percentile, dark blue line), severe waves (99th percentile, light blue line) and the largest wave (green line) in {locName}."
+    },
+    {
+        "name": "annualWaveVariation_large",
+        "id": "Figure 8",
+        "caption": "Annual variation in large waves (90th percentile, dark blue line), severe waves (99th percentile, light blue line) and the largest wave (green line) in {locName}."
+    },
+    {
+        "name": "extremeValuesAnalysis",
+        "id": "Figure 9",
+        "caption": "Extreme wave distribution for {locName}. The red circles represent the wave events that occured since {yearStart}. The plain line is the statistical distribution that best fits the past wave events. The dashed lines show the upper and lower high confidence of the fit, there is a 95% chance that the fitted distribution lies between the two dashed lines."
+    },
+    {
+        "name": "waveEnergy",
+        "id": "Figure 10",
+        "caption": "Occurences of sea states in {locName}."
+    },
+    {
+        "name": "annualWindRose",
+        "id": "Figure 11",
+        "caption": "Annual wind rose for {locName}. Note that directions are where the waves are <b>coming from</b>."
+    },
+    {
+        "name": "monthlyWindVariation",
+        "id": "Figure 12",
+        "caption": "Monthly wind speed (black line) and direction (arrows)."
+    }
+]

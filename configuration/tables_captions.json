@@ -1,0 +1,22 @@
+[
+    {
+        "name": "validationWaveHindcast",
+        "id": "Table 1",
+        "caption": "Validation of the wave hindcast model used to evaluate the wave climate."
+    },
+    {
+        "name": "waveConditionsHindcast",
+        "id": "Table 2",
+        "caption": "Mean wave conditions calculated between {yearStart} and {yearEnd} for {locName}."
+    },
+    {
+        "name": "largestWaveEvents",
+        "id": "Table 3",
+        "caption": "List of the 30 largest wave events in {locName}."
+    },
+    {
+        "name": "summaryExtremeWaves",
+        "id": "Table 4",
+        "caption": "Summary of the results from the extreme wave analysis in {locName}."
+    }
+]
