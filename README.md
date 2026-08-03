@@ -104,6 +104,96 @@ The output year is currently pinned to `2025` at
 the current year — uncomment it if you want new runs to land in a fresh directory
 instead of overwriting the 2025 set.
 
+## Pipeline
+
+The run splits into three stages: **collate** the raw hindcast into a per-location CSV
+(done once, on-network), **process** that CSV into figures and statistics, then
+**assemble** the PDF. Only stages 2 and 3 execute on a normal `python main.py` run.
+
+```mermaid
+flowchart TD
+    MAIN["<b>main.py</b> · run()"]
+
+    CFG[("<b>configuration/</b><br/>locations_list · countries_list<br/>text_content_v2 · table_content<br/>figures_captions · tables_captions<br/>paragraph_styles · glossary_terms")]
+    ANC[("<b>ancillary/</b><br/>Logos · SOI · SAM indices")]
+
+    subgraph S1["STAGE 1 — COLLATE (disabled in main.py, needs the SPC network share)"]
+        direction TB
+        WW3[("WAVEWATCH III hindcast grids<br/>ww3.pac_4m / pac_10m / glob_24m / aus_4m<br/>monthly NetCDF, 1979 → present")]
+        HR["<b>utils/hindcast_reader.py</b> · HindcastReader<br/>load_hindcast() — xarray open_dataset,<br/>nearest grid point per location,<br/>pre/post Jun-2013 variable mapping, Tp = 1/fp"]
+        EXP["export_hindcast() — np.savetxt"]
+        WW3 --> HR --> EXP
+    end
+
+    CSV[("<b>&lt;Loc&gt;_hindcast_data.csv</b><br/>hourly · 10 columns<br/>Hm0 Dp Dm Tp Tm Dspd Ecg U10 V10 nw")]
+    EXP --> CSV
+
+    subgraph S2["STAGE 2 — PROCESS"]
+        direction TB
+        LOC["<b>utils/utilitaries.py</b> · Location(FileManager, ReportFigures)<br/>reads config JSON, builds region/zoom bboxes, mkdir output"]
+        LOAD["Location.load_data() — np.loadtxt + hourly time vector 1979→2025"]
+        DP["<b>utils/data_processing.py</b> · DataProcessing<br/>generate_masks() seasonal / yearly / monthly<br/>trends, SOI+SAM correlation, sea states, direction bins"]
+        PLOTS["<b>pdf_factory/plots_manager.py</b> · ReportFigures.generate_all_plots()"]
+        FF["<b>pdf_factory/figures_func.py</b> + <b>fig_tools.py</b><br/>cartopy maps · windrose roses · variability panels"]
+        EVA["pyextremes EVA — POT @ 95th pct, r=24h<br/>genpareto MLE, 1–100 yr return values"]
+        TXT["DataProcessing.generate_text_values()<br/>→ dataOut (prose) + dataTable (tables)"]
+        LOC --> LOAD --> DP
+        DP --> PLOTS
+        PLOTS --> FF
+        PLOTS --> EVA
+        DP --> TXT
+    end
+
+    JPEG[("13 × figure_*.jpeg<br/>in output/2025/&lt;Loc&gt;/")]
+    FF --> JPEG
+    EVA --> JPEG
+
+    subgraph S3["STAGE 3 — PDF ASSEMBLY"]
+        direction TB
+        WR["<b>pdf_factory/layout_manager.py</b> · WaveReport<br/>BaseDocTemplate, frames, headers, TOC<br/>firstPage → climate → roses → variability →<br/>large/severe → extremes → wind → glossary"]
+        TM["<b>pdf_factory/text_manager.py</b><br/>TextManager · TableManager<br/>substitute dataOut/dataTable into the JSON templates"]
+        LU["<b>pdf_factory/layout_utils.py</b> · ReportUtils<br/>insert_image, captions, rulers"]
+        FM["<b>utils/file_manager.py</b> · FileManager<br/>loads content, tables, captions"]
+        WR --> TM
+        WR --> LU
+        WR --> FM
+        BUILD["doc.multiBuild(elements)"]
+        TM --> BUILD
+        LU --> BUILD
+        FM --> BUILD
+    end
+
+    PDF[("<b>wave_report_&lt;Loc&gt;_&lt;Country&gt;.pdf</b>")]
+    BUILD --> PDF
+
+    MAIN -.->|"commented out at main.py:32-34"| S1
+    MAIN --> LOC
+    MAIN --> WR
+    CSV --> LOAD
+    CFG --> LOC
+    CFG --> FM
+    ANC --> DP
+    ANC --> WR
+    JPEG --> LU
+    TXT --> WR
+
+    classDef store fill:#eef4fb,stroke:#5b8db8,color:#123
+    classDef dim fill:#f6f6f6,stroke:#bbb,color:#555
+    class WW3,CSV,JPEG,PDF,CFG,ANC store
+    class S1,HR,EXP dim
+```
+
+### Stage-by-stage
+
+| Stage | Entry point | Scripts | Produces |
+|---|---|---|---|
+| 1 · Collate | `HindcastReader(Locations).load_hindcast()` / `.export_hindcast()` | [utils/hindcast_reader.py](utils/hindcast_reader.py) | `<Loc>_hindcast_data.csv` |
+| 2 · Process | `Loc.load_data()` → `Loc.generate_all_plots()` → `Loc.generate_text_values()` | [utils/utilitaries.py](utils/utilitaries.py), [utils/data_processing.py](utils/data_processing.py), [pdf_factory/plots_manager.py](pdf_factory/plots_manager.py), [pdf_factory/figures_func.py](pdf_factory/figures_func.py), [pdf_factory/fig_tools.py](pdf_factory/fig_tools.py) | 13 JPEGs + `dataOut` / `dataTable` dicts |
+| 3 · Assemble | `WaveReport(fpath, locName, txt_keyValues, table_keyValues)` | [pdf_factory/layout_manager.py](pdf_factory/layout_manager.py), [pdf_factory/text_manager.py](pdf_factory/text_manager.py), [pdf_factory/layout_utils.py](pdf_factory/layout_utils.py), [utils/file_manager.py](utils/file_manager.py) | the report PDF |
+
+Stage 3 does no computation — it only reads the JPEGs off disk and substitutes the two
+dicts from stage 2 into the text and table templates in `configuration/`.
+
 ## Layout
 
 | Path | Contents |
@@ -118,6 +208,18 @@ instead of overwriting the 2025 set.
 
 ## Notes
 
+- Two modules sit outside the pipeline drawn above:
+  [pdf_factory/report_content_manager.py](pdf_factory/report_content_manager.py) is only
+  reached from `dev_test.py`, and `WavesExtremeValuesAnalysis` in
+  [utils/pyEVA.py](utils/pyEVA.py) is imported by `plots_manager.py` but never
+  instantiated — the live extreme value analysis runs through `pyextremes`. `pyEVA.py`
+  is not fully dead, though: `PhysicalConstants` from it is used by the wave energy
+  calculation in [figures_func.py](pdf_factory/figures_func.py#L949-L950).
+- There are two separate `FileManager` classes — one in
+  [utils/utilitaries.py](utils/utilitaries.py#L18) used by `Location`, one in
+  [utils/file_manager.py](utils/file_manager.py#L18) used by `WaveReport`. They overlap
+  but the second also loads the table and caption JSON. There is a `TODO` in
+  `layout_manager.py` about merging them.
 - `dev_test.py` calls `generate_location_map()`, which reads a
   `ancillary/coastline_pacific_countries/Pacific_Coastlines_0_360.shp` shapefile that is
   not in the repository. The `main.py` pipeline does not use it — the maps it produces
