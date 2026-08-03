@@ -1,0 +1,34 @@
+# WaveAtlasReports — pip equivalent of the waveReportEnv_v2 conda environment.
+# Versions match what was installed in that conda env.
+#
+#   python -m venv vwave && source vwave/bin/activate
+#   pip install -r requirements.txt
+
+# --- core scientific stack ---
+numpy==2.3.3
+pandas==2.3.3
+scipy==1.16.2
+xarray==2025.9.1
+netCDF4==1.7.2
+
+# --- geospatial ---
+cartopy==0.25.0
+geopandas==1.1.1
+shapely==2.0.7
+pyproj==3.7.1
+pyogrio==0.10.0
+
+# --- plotting ---
+matplotlib==3.10.6
+windrose==1.9.2
+
+# --- statistics / extreme value analysis ---
+pyextremes==2.3.3
+copulas==0.12.3
+emcee==3.1.6           # optional pyextremes MCMC backend, present in the conda env
+scikit-learn==1.7.2    # pulled in by copulas
+plotly==6.3.1          # pulled in by copulas
+
+# --- PDF generation ---
+reportlab==4.4.4
+pillow==11.3.0         # reportlab image support
