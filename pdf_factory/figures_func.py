@@ -39,9 +39,13 @@ def plot_area_map(bbox, nearbyLocations, xloc, yloc, mapType, savedir):
         'dpi': 200,
         'layout': 'compressed',
         'subplot_kw': {
-            'projection': ccrs.PlateCarree()
-        } 
+            # Centred on the dateline so Pacific boxes crossing 180 (Fiji, Tuvalu) are not split
+            'projection': ccrs.PlateCarree(central_longitude=180)
+        }
     }
+
+    # Coordinates (bbox, locations, ticks) are plain lon/lat
+    lonlat = ccrs.PlateCarree()
 
     # Extent of the map
     coord = get_coordinates(bbox)
@@ -57,6 +61,7 @@ def plot_area_map(bbox, nearbyLocations, xloc, yloc, mapType, savedir):
     
     # 
     xticks, yticks = get_map_grid_definition(bbox=bbox)
+    xticks = (xticks + 180) % 360 - 180     # gridlines expect -180..180, so 188 -> -172 (172°W)
     
     # Basemap doesn't display these points otherwise (i.e., passing a single float sometimes doesnt work)
     x = np.array([xloc])
@@ -64,19 +69,21 @@ def plot_area_map(bbox, nearbyLocations, xloc, yloc, mapType, savedir):
     
     
     fig, axs = plt.subplots(**fkwargs)
-    axs.set_extent(extent, crs=fkwargs['subplot_kw']['projection'])
+    axs.set_extent(extent, crs=lonlat)
 
     axs.add_feature(cfeature.LAND, facecolor='lightgrey')
     # axs.add_feature(cfeature.OCEAN)
     axs.coastlines(resolution='10m', color='k', linewidth=0.5)
 
-    axs.plot(x, y, color='r', **pkwargs)
+    # transform: points are lon/lat (0-360 or -180..180), projected onto the map
+    # The location itself is drawn last so a nearby location at the same point (e.g. Fongafale / Funafuti) doesn't hide it
     if nearbyLocations.size >= 2:
-        axs.plot(nearbyLocations[:,0], nearbyLocations[:,1], color='g', **pkwargs)
+        axs.plot(nearbyLocations[:,0], nearbyLocations[:,1], color='g', transform=ccrs.Geodetic(), **pkwargs)
+    axs.plot(x, y, color='r', transform=ccrs.Geodetic(), **pkwargs)
 
     # Manage the axis and their legends
     gl = axs.gridlines(
-        crs=fkwargs['subplot_kw']['projection'], 
+        crs=lonlat,
         draw_labels={'top': False, 'bottom': True, 'left': True, 'right': False},
         xlocs=xticks,
         ylocs=yticks,

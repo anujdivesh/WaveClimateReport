@@ -115,7 +115,8 @@ class Location(FileManager, ReportFigures):
         # Creating a time vector
         t0 = np.datetime64(datetime(year=1979, month=1, day=1, hour=0), '[h]')
         # t1 = np.datetime64(datetime(year=datetime.now().year, month=1, day=1, hour=0), '[h]')
-        t1 = np.datetime64(datetime(year=2025, month=1, day=1, hour=0), '[h]')
+        # t1 = np.datetime64(datetime(year=2025, month=1, day=1, hour=0), '[h]')
+        t1 = t0 + np.timedelta64(len(data), 'h')    # hourly record from 1979, whatever year it ends
 
         # self.time = np.arange(t0, t1, dtype='datetime64[h]').astype(datetime)
         self.time = np.arange(t0, t1, dtype='datetime64[h]')

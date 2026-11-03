@@ -22,8 +22,8 @@ from utils.utilitaries import Location
 
 def run():
     
-    locList = ['Betio']
-    # locList = ['Pago Pago']
+    #locList = ['Betio']
+    locList = ['Apia']
     
     
     # locList = ['Betio', 'Guam', 'Pago Pago', 'Yap']
